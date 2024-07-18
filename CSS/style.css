@@ -1,0 +1,1265 @@
+/* navbar */
+
+:root{
+  --main-color-1:#7FAF1D;
+  --main-color-2:#253C4A;
+  --main-color-3:#292B2A;
+  --main-color-4:#ffffff;
+  --main-color-5:#000000;
+}
+
+
+
+nav{
+background-image: url(../background-images/nav-bgjpeg.jpeg);
+background-position: center;
+background-size: cover;
+width: 100%;
+height: 15vh;
+}
+
+nav,.nav-filter,.nav-toggle{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-toggle{
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+padding-right: 20px;
+margin-left: auto;
+margin-top:10px;
+gap: 2rem;
+
+@media (min-width:800px) {
+  padding-right:50px;
+  margin-top:15px;
+}
+}
+
+.nav-filter{
+  width: 100%;
+height: 15vh;
+background-color: #080707ec;
+/* box-shadow: 2px 2px 2px rgb(128, 128, 128); */
+}
+
+ul li a{
+  list-style: none;
+  text-decoration: none;
+}
+
+ul{
+  
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+
+}
+
+.nav-filter a{
+  list-style: none;
+  color: white;
+}
+
+.nav-filter a:hover{
+ color: #7FAF1D;
+ text-decoration: underline;
+}
+
+.logo{
+  background-image: url(../background-images/Genesis-11-logo.png);
+  background-position: center;
+  background-size: cover;
+width:100px;
+height:24px;
+left: 0;
+top: 0;
+margin-left: 20px;
+margin-top:30px;
+
+@media (min-width:800px) {
+  margin-top:30px;
+margin-left:50px;
+width:140px;
+height:44px;
+}
+
+@media (min-width:1500px){
+  width:160px;
+  height:54px;
+}
+
+}
+
+
+
+.nav-bar-div2 i{
+  font-size:30px;
+  @media (min-width:801px) {
+  font-size: 40px;
+  }
+
+  @media (min-width:1001px) {
+  display: none;
+    }
+
+}
+
+.theme-icon-div{
+  cursor: pointer;
+  font-size:28px;
+  @media (min-width:800px) {
+  font-size: 34px;
+  }
+}
+
+
+.nav-bar-div,.nav-div{
+  display: flex;
+  flex-direction: row;
+ margin-left: auto;
+padding-right: -90px;
+  @media (max-width:1000px) {
+    display: none;
+  }
+}
+
+.nav-div a{
+  font-size:20px;
+  color: #7FAF1D;
+  margin-top: -15px;
+  @media (min-width:1500px){
+    font-size:30px;
+  }
+}
+
+.nav-div a:hover{
+  color: #ffffff;
+  background-color: #7FAF1D;
+  border-radius: 10px;
+}
+
+
+
+/* menu bar */
+
+ul{
+  list-style: none;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  display:block;
+  padding: 20px 25px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+}
+
+.dropdown a{
+  margin-left: -40px;
+}
+
+ul li ul.dropdown li{
+  display: block;
+}
+
+ul li ul.dropdown{
+  background-color: #253C4A;
+  width: 130px;
+  z-index: 999;
+  position: absolute;
+  display: none;
+  margin-left: -130px;
+}
+
+ul li a:hover{
+  color: #7FAF1D;
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+
+/* light and dark theme toggle */
+
+.theme-icon-div i{
+  margin-top: 20px;
+  @media (min-width:1500px) {
+    font-size: 35px;
+  }
+}
+
+
+  
+body.dark{
+  background-color: rgb(19, 17, 17);
+  color: white;
+
+  a{
+    color: white;
+  }
+
+  ul li a:hover{
+    color: #253C4A;
+  }
+  p{
+    color: white;
+  }
+
+.dropdown{
+  background-color: #7FAF1D;
+
+}
+
+.nav-filter{
+  background-color: #141111ec;
+}
+
+}
+
+body.light{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+ 
+  #Abt-part2 {
+    background-color: white;
+  }
+
+  #About{
+    background-color: white;
+  }
+
+  p{
+    color: black;
+  }
+
+  a{
+    color: rgb(0, 0, 0);
+  }
+
+/* .dropdown{
+  background-color: rgb(184, 166, 166);
+} */
+
+.nav-filter{
+  background-color: #eeeeeeec;
+}
+
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+/* Home section */
+
+#home{
+  width: 100%;
+  height: 100vh;
+  background-position-x: center;
+  background-size: cover;
+  background-image: url(../background-images/home-bg.jpeg);
+}
+
+
+.home-btns{
+  display: flex;
+  flex-direction: row;
+  gap:0.4rem;
+
+  @media (min-width:1200px) {
+   scale: 1.5;
+  }
+
+  @media (min-width:1500px) {
+    scale: 1.7;
+   }
+
+   @media (min-width:1600px) {
+    scale: 2;
+   }
+
+   @media (min-width:1800px) {
+    scale:2.3;
+   }
+
+}
+
+.home-btns button{
+  width: 100px;
+  height: 30px;
+  @media (max-width:499px) {
+    display: none;
+  }
+}
+
+.home-btns button:nth-child(1){
+  background-color: #7FAF1D;
+  border: none;
+  border-radius:3px;
+}
+
+.home-btns button:nth-child(1):hover{
+  background-color:transparent;
+  border:2.5px solid #7FAF1D;
+  scale: 1.1;
+  margin-right: 5px;
+}
+
+.home-btns a:nth-child(1){
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 11px;
+}
+
+.home-btns button:nth-child(2){
+  background-color: transparent;
+  border:2px solid #7FAF1D;
+  border-radius:3px;
+}
+
+.home-btns a:nth-child(2){
+color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.home-btns button:nth-child(2):hover{
+  background-color:#0f0e0e;
+  border:2.5px solid #7FAF1D;
+  scale: 1.1;
+  margin-left: 5px;
+}
+.home-btns a:hover{
+  color: #7FAF1D;
+}
+
+
+.paragraph-btns{
+  margin-top: -30px;
+}
+
+.main-home-content h1{
+  color: white;
+  font-size: 32px;
+
+  @media (min-width:310px) {
+    font-size: 35px;
+  }
+
+  @media (min-width:420px) {
+    font-size:40px;
+  }
+
+  @media (min-width:500px) {
+    font-size: 52px;
+  }
+
+  @media (min-width:700px) {
+    font-size: 56px;
+  }
+
+  @media (min-width:800px) {
+    font-size: 58px;
+  }
+
+  @media (min-width:1000px) {
+    font-size: 65px;
+  }
+
+  @media (min-width:1100px) {
+    font-size:70px;
+  }
+
+  @media (min-width:1200px) {
+    font-size: 80px;
+  }
+
+  /* @media (min-width:1300px) {
+    font-size: 80px;
+  } */
+
+  @media (min-width:1400px) {
+    font-size: 100px;
+  }
+
+  @media (min-width:1700px) {
+    font-size:135px;
+  }
+
+}
+
+.main-home-content p{
+  color: white;
+  font-size:13px;
+margin-top: -30px;
+margin-bottom: 50px;
+
+@media (min-width:700px) {
+  font-size:18px;
+}
+
+@media (min-width:700px) {
+  font-size:18px;
+}
+
+
+@media (min-width:1200px) {
+  font-size:25px;
+  font-weight: lighter;
+  margin-top: -70px;
+}
+
+@media (min-width:1400px) {
+  font-size:28px;
+  margin-top: -80px;
+}
+
+@media (min-width:1600px) {
+  font-size:32px;
+  margin-top: -80px;
+}
+
+@media (min-width:1700px) {
+  font-size:37px;
+  margin-top: -80px;
+}
+
+@media (min-width:1900px) {
+  font-size:38px;
+  margin-top: -80px;
+}
+
+}
+
+.main-home-content p{
+  @media (min-width:1200px) and (min-width:1920px){
+    margin-top: -80px;
+  }
+}
+
+
+.main-home-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:-70px;
+}
+
+.main-home-content{
+  width: 100%;
+  height: 100vh;
+  background-color: #292b2aa9;
+}
+
+
+.sm-tbn{
+  background-color: transparent;
+  border:2.5px solid #7FAF1D;
+  border-radius:5px;
+  width: 140px;
+  height:35px;
+  @media (min-width:500px) {
+    display: none;
+  }
+}
+
+.sm-tbn:hover{
+  background-color:#7FAF1D;
+  border:2.5px solid #0a0a0a;
+}
+
+
+.sm-tbn a{
+color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+
+  @media (min-width:500px) {
+    display: none;
+  }
+}
+
+.sm-tbn a:hover{
+  color: #000000;
+}
+
+/* 
+About section */
+
+#About{
+  width: 100%;
+  height: 120vh;
+  /* background-position-x: center;
+  background-size: cover;
+  background-image: url(../background-images/bg-gen.png); */
+background-color: #000000;
+@media (min-width:600px) {
+  height: 130vh;
+}
+
+}
+
+
+#About h1:nth-child(1){
+  color: #ffffff;
+  font-size: 30px;
+}
+
+/* scroll */
+
+.Abt-img{
+  background-image: url(../ASSETS/exterior-images/entrance/Amazing\ Exterior\ Modern\ House\ Design\ Ideas\ That\ Will\ Make\ Your\ Abode\ Cozier.jpeg);
+background-position: center;
+background-size: cover;
+width: 200px;
+height: 250px;
+margin-top: -60px;
+
+@media (min-width:340px) and (max-width:450px){
+  width: 250px;
+height: 300px;
+}
+
+@media (min-width:451px) and (max-width:799px){
+width:  300px;
+height: 310px;
+}
+
+@media (min-width:800px){
+  display: none;
+}
+}
+
+
+
+.first-Abt-div span{
+  color: #7FAF1D;
+}
+
+
+.Abt-genesis-text a{
+ 
+  @media (max-width:450px){
+   display: none;
+   color: #ffffff;
+   text-decoration: none;
+    }
+
+   
+}
+
+.abt-btn{
+  background-color: transparent;
+  border:2.5px solid #7FAF1D;
+  border-radius:5px;
+  width: 140px;
+  height:35px;
+  /* @media (min-width:500px) {
+    display: none;
+  } */
+}
+
+.abt-btn:hover{
+  background-color:#253C4A;
+  border: 2px solid transparent;
+  border-bottom:5px solid #7FAF1D;
+  border-right:5px solid #7FAF1D;
+  box-shadow: 3px 3px 3px rgba(133, 133, 133, 0.767);
+  scale: 1.2;
+}
+
+
+.abt-btn a{
+color: #7FAF1D;
+  text-decoration: none;
+  text-align: center;
+}
+
+.abt-btn a:hover{
+  color: #7FAF1D;
+}
+
+.Abt-genesis-text{
+  color: #ffffff;
+  @media (min-width:200px) and (max-width:339px){
+    width: 200px;
+  }
+ 
+  @media (min-width:340px) and (max-width:450px){
+    width: 250px;
+  }
+  @media (min-width:451px) and (max-width:599px){
+    width:330px;
+  }
+
+  @media (min-width:540px) and (max-width:799px){
+    width:365px;
+  }
+}
+
+
+.text-and-btns{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+
+
+  @media (min-width:200px) and (max-width:339px){
+    padding-left:60px;
+  }
+
+  @media (min-width:340px) and (max-width:391px){
+    padding-left:75px;
+  }
+
+  @media (min-width:392px) and (max-width:799px){
+    padding-left:114px;
+  }
+
+}
+
+.extension-text{
+  color: #ffffff;
+  text-decoration: none;
+  @media (min-width:600px) {
+ padding-bottom: -40px;
+  }
+}
+
+.second-Abt-heading,.Abt-part1-text-button h1{
+  color: #ffffff;
+  @media (max-width:799px) {
+    display: none;
+  }
+
+  @media (min-width:800px) {
+   font-size:30px;
+  }
+
+}
+
+.first-Abt-heading{
+  @media (min-width:800px) {
+    display: none;
+  }
+}
+
+
+.Abt-img2{
+  background-image: url(../ASSETS/interior-images/dining/Contemporary\ Left\ Hand\ Facing\ Sectional\ 4-Seater\ Sofa\ with\ Pillow\ Back\ Cushions.jpeg);
+  background-position-x: center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  margin-top:27px;
+  @media (max-width:799px) {
+    display: none;
+  }
+}
+
+
+.first-Abt-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+
+
+.Abt-genesis-text2{
+  color: white;
+  margin-top: -20px;
+}
+
+
+.Abt-genesis-text{
+  @media (min-width:800px) {
+margin-top: -10px;
+font-size:15px;
+  }
+}
+
+
+/* .left1{
+  @media (min-width:600px) {
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+  } 
+  width: 400px;
+  @media (min-width:600px) and (max-width:700px) {
+width: 240px;
+  }
+
+} */
+
+.second-Abt-div{
+  @media (max-width:799px) {
+    display: none;
+  }
+
+  @media (min-width:800px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+      }
+
+@media (min-width:1080px) {
+  gap:5rem;
+}
+
+@media (min-width:1300px) {
+  gap:12rem;
+}
+
+@media (min-width:1400px) {
+  scale: 1.3;
+}
+
+@media (min-width:1600px) {
+scale: 1.4;
+}
+
+}
+
+
+.right1-img{
+  background-image: url(../background-images/Group\ 4.png);
+  background-position-x: center;
+  background-size: cover;
+  width: 400px;
+  height:400px;
+/* margin-left: -20px; */
+@media (max-width:799px) {
+ display: none;
+}
+}
+
+
+.right1-img2{
+  background-image: url(../ASSETS/exterior-images/entrance/Innovative\ Living_\ Exploring\ the\ Charms\ of\ a\ 4\ BHK\ Flat\ Roof\ Home.jpeg);
+  background-position-x: center;
+  background-size: cover;
+  width: 300px;
+  height:300px;
+@media (max-width:799px) {
+ display: none;
+}
+}
+
+
+.xperience,.accolades,.projects{
+  background-color:#253C4A;
+  width:100px;
+  height: 40px;
+  box-shadow: 3px 3px 3px rgba(133, 133, 133, 0.767);
+}
+
+.right1-img,.right1-img2{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.top-Acc-div{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.xperience{
+margin-top:60px;
+}
+
+.projects:hover{
+  scale: 1.2;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(71, 99, 27, 0.767);
+}
+
+.xperience:hover{
+  scale: 1.2;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(71, 99, 27, 0.767);
+}
+
+.accolades:hover{
+  scale: 1.2;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px rgba(71, 99, 27, 0.767);
+}
+
+.projects{
+  height: 40px;
+margin-top:70px;
+margin-left: 70px;
+}
+
+.accolades{
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+margin-top:110px;
+margin-left:150px;
+}
+
+
+
+.right2 h1{
+  color: #ffffff;
+}
+
+.right2{
+  gap:1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+
+.accolades-text{
+  display: flex;
+  flex-direction: column;
+ text-align: center;
+}
+
+.accolades-text2{
+  color: #7eaf1dc0;
+  font-size: 10px;
+  margin-top: -10px;
+}
+
+.accolades-text1{
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top:2px;
+}
+
+.right1-img i{
+  color: #7FAF1D;
+  text-align: center;
+  margin-top:10px;
+  margin-left: 10px;
+  font-size:20px;
+}
+
+.accolades i{
+  color: #7FAF1D;
+  text-align: center;
+  margin-top:3px;
+  margin-left: 10px;
+  font-size:25px;
+}
+
+
+.major-text{
+  margin-top: -25px;
+margin-left: 15px;
+}
+
+
+.Abt-part1-text-button h1,.Abt-part1-text-button p{
+  color: white;
+}
+
+
+.Abt-part1-img{
+  background-image: url(../ASSETS/interior-images/lounge/FURNITURE\ LEISURE\,\ INC_\ Causeuse\ en\ cuir\ massif\ à\ double\ face\ en\ cuir\ sculpté\ à\ accoudoirs\ roulés\ 64\,96\ po.jpeg);
+background-size: cover;
+background-position-x: center;
+width: 320px;
+height: 320px;
+
+@media (min-width:1200px) {
+  width: 350px;
+height: 350px;
+}
+
+}
+
+.Abt-part1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* border-top:20px solid #1c1d1c; */
+margin-top:90px;
+  @media (min-width:1080px) {
+    gap:5rem;
+  }
+  
+  @media (min-width:1300px) {
+    gap:12rem;
+  }
+  
+  @media (min-width:1400px) {
+    scale: 1.3;
+    margin-bottom: 70px;
+  }
+  
+  @media (min-width:1600px) {
+  scale: 1.4;
+  }
+
+}
+
+/* conact section */
+
+#Contact{
+  background-image: url(../ASSETS/interior-images/lounge/9\ Pieces\ Dining\ Table\ Set\,\ Modern\ Round\ Dining\ Room\ Table\ Set\ of\ 8\,\ Sintered\ Stone\ Dining\ Table\ with\ Lazy\ Susan\,\ 59_\ D\ Faux\ Marble\ Dining\ Table\ with\ 8\ Dining\ Chairs\ for\ Living\ Room\,\ Kitchen.jpeg);
+  background-position-x: center;
+  background-size: cover;
+  width:100%;
+  height:100vh;
+
+  @media (max-width:599px) {
+    height:200vh;
+  }
+
+
+}
+
+form{
+  background-color: #0f0e0ed3;
+  width:300px;
+  height:550px;
+
+  /* @media (min-width:1300px){
+    width:400px;
+    height:650px;
+    }
+  
+    @media (min-width:1600px){
+      width:450px;
+      height:550px;
+    } */
+
+    @media (min-width:1300px){
+      scale: 1;
+      }
+    
+      @media (min-width:1600px){
+       scale: 1.3;
+      }
+
+}
+
+form p,form h3, form h2{
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  margin-left: 23px;
+  margin-right: 20px;
+}
+
+input{
+  width: 80%;
+  height: 27px;
+  margin: auto;
+}
+
+.form-content{
+  display: flex;
+  flex-direction: column;
+  gap:1rem;
+}
+
+
+.form-content button{
+  background-color: #7FAF1D;
+  border: none;
+  width: 83%;
+  margin: auto;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.form-content button:hover{
+  background-color: #253C4A;
+  border-bottom:3px solid   #7FAF1D;
+  border-left:3px solid   #7FAF1D;
+  box-shadow:5px 5px  5px  rgb(97, 94, 94);
+  scale: 1.14;
+}
+
+label{
+  color: #ffffff;
+  top: 0;
+  left: 0;
+  margin-left: 23px;
+}
+
+.form-content a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.icon-input{
+  position: relative;
+}
+
+.icon-input i{
+  position: absolute;
+  left:40px;
+  top: 8px;
+}
+
+.icon-input input{
+  margin: auto;
+  margin-left: 30px;
+}
+
+.social-handles{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  @media (min-width:1300px){
+    gap:2.5rem;
+    }
+  
+    @media (min-width:1600px){
+      gap:5rem;
+    }
+
+}
+
+.icon-div:hover{
+  border: 2px solid #ffffff;
+  background-color: #7eaf1d52;
+}
+
+
+.icon-div{
+  border: 2px solid #7FAF1D; 
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  @media (min-width:1300px){
+    margin-top: 15px;
+    scale: 1;
+    }
+  
+    @media (min-width:1600px){
+      scale: 1.70;
+      margin-top: 15px;
+    }
+}
+
+.icon-div:hover{
+  border: 2px solid #ffffff;
+  background-color: #7eaf1d52;
+}
+
+.icon-div:hover{
+   border: 2px solid #ffffff;
+  background-color: #253c4a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow:5px 5px  5px  gray;
+  scale: 1.2;
+}
+
+.icon-div{
+  border:3px solid #7FAF1D;
+  background-color: #253c4a;
+
+
+
+}
+
+.fa-facebook{
+margin-left:18px;
+margin-top: 12px;
+}
+
+.fa-linkedin{
+  margin-left:15px;
+  margin-top:10px;
+  }
+
+  .fa-google-plus{
+    margin-left:11px;
+    margin-top:13px;
+    }
+
+
+.main-contact-div{
+  background-color: #00000054;
+  width:100%;
+  height:100vh;
+
+  @media (max-width:599px) {
+    height:200vh;
+  }
+
+@media (max-width:599px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width:600px) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+@media (min-width:1300px){
+  gap:10rem;
+  }
+
+  @media (min-width:1600px){
+    gap:12rem;
+  }
+
+  @media (min-width:1800px){
+    gap:14rem;
+    scale: 1.2;
+  }
+
+}
+
+
+.left-contact-div{
+  @media (min-width:600px) {
+    margin-top: -25px;
+  }
+}
+
+
+.p:hover{
+  box-shadow: 5px 5px 5px rgb(98, 206, 9);
+  scale: 1.1;
+  margin-bottom: 20px;
+}
+
+.left-contact-div p{
+  color: #ffffff;
+
+  @media (min-width:800px){
+    font-size:16px;
+  }
+
+  @media (min-width:1300px){
+    font-size:19px;
+  }
+
+  @media (min-width:1600px){
+    font-size:24px;
+  }
+
+}
+
+.main-contact-div a{
+  text-decoration: none;
+}
+
+.left-contact-div  i{
+  color: #253c4a;
+  color: #7FAF1D;
+
+ 
+
+  @media (min-width:1300px){
+  scale: 1;
+  }
+
+  @media (min-width:1600px){
+    scale: 1.20;
+  }
+
+}
+
+.left-contact-div{
+  @media (max-width:599px){
+   margin-left: -65px;
+    }
+}
+
+.left-contact-div h1{
+  color: white;
+  font-size:40px;
+  @media (max-width:599px){
+  display: none;
+     }
+}
+
+.left-contact-div  i:hover{
+  color: #253c4a;
+}
+
+.main-contact-div h2{
+  font-size:40px;
+  font-weight: bolder;
+}
+
+
+.first-text{
+  font-size:22px;
+margin-bottom:-27px;
+}
+
+.second-p{
+  font-size: 14px;
+  font-weight: lighter;
+  margin-top: -26px;
+  margin-bottom: 50px;
+}
+
+
+#Abt-part2{
+  background-color: #000000;
+  height:130%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (max-width:799px) {
+    display: none;
+   }
+  
+}
+
+#Abt-part2{
+  height: 160%;
+}
+
+#About{
+  @media (min-width:800px) {
+   display: none;
+  }
+}
+
+
+/* Properties section */
+
+
+
